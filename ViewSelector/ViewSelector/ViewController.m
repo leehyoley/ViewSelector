@@ -42,6 +42,15 @@
     
     //初始化并push
     LXViewSelectorController *vc = [[LXViewSelectorController alloc] initWithControllers:vcArr titles:titleArr];
+    
+    //以下参数可不用设置，有默认值
+    ////////////////////////////////////////////////////////////
+    vc.fontSize=10;
+    vc.tipSize = (CGSize){30,3};
+    vc.normalColor =RandomColor;
+    vc.selectedColor = RandomColor;
+    /////////////////////////////////////////////////////////////
+    
     vc.title = @"视图选择器";
     [self.navigationController pushViewController:vc animated:YES];
     

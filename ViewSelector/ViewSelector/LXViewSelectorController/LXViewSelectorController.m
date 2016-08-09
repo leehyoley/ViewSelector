@@ -87,7 +87,6 @@
     if (sender.state==UIGestureRecognizerStateEnded) {
         
         //poi为速度，point是位移
-        //位移超过一半或者滑动结束时速度大于300就翻页，否则还原
         if (poi.x>300) {
             
             int count = (int)x/(int)self.showView.bounds.size.width;
@@ -150,9 +149,7 @@
 
 -(NSArray *)originArray{
     if (!_originArray) {
-        
         NSMutableArray *tempArr = [NSMutableArray array];
-        
         for (int i=0; i<self.controllers.count; i++) {
             [tempArr addObject:@(self.selectorView.bounds.size.width/(self.controllers.count*2)+self.selectorView.bounds.size.width*i/self.controllers.count)];
         }
