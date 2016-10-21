@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B85FA621DB9F47E004280AD /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B85FA601DB9F47E004280AD /* TestTableViewController.m */; };
+		9B85FA631DB9F47E004280AD /* TestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B85FA611DB9F47E004280AD /* TestTableViewController.xib */; };
 		ECBCF2101D585E5B0020779C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBCF20F1D585E5B0020779C /* main.m */; };
 		ECBCF2131D585E5B0020779C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBCF2121D585E5B0020779C /* AppDelegate.m */; };
 		ECBCF2161D585E5B0020779C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBCF2151D585E5B0020779C /* ViewController.m */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B85FA5F1DB9F47E004280AD /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		9B85FA601DB9F47E004280AD /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		9B85FA611DB9F47E004280AD /* TestTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewController.xib; sourceTree = "<group>"; };
 		ECBCF20B1D585E5B0020779C /* ViewSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBCF20F1D585E5B0020779C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECBCF2111D585E5B0020779C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +71,9 @@
 				ECBCF2121D585E5B0020779C /* AppDelegate.m */,
 				ECBCF2141D585E5B0020779C /* ViewController.h */,
 				ECBCF2151D585E5B0020779C /* ViewController.m */,
+				9B85FA5F1DB9F47E004280AD /* TestTableViewController.h */,
+				9B85FA601DB9F47E004280AD /* TestTableViewController.m */,
+				9B85FA611DB9F47E004280AD /* TestTableViewController.xib */,
 				ECBCF2171D585E5B0020779C /* Main.storyboard */,
 				ECBCF21A1D585E5B0020779C /* Assets.xcassets */,
 				ECBCF21C1D585E5B0020779C /* LaunchScreen.storyboard */,
@@ -152,6 +160,7 @@
 				ECBCF21E1D585E5B0020779C /* LaunchScreen.storyboard in Resources */,
 				ECBCF21B1D585E5B0020779C /* Assets.xcassets in Resources */,
 				ECBCF2191D585E5B0020779C /* Main.storyboard in Resources */,
+				9B85FA631DB9F47E004280AD /* TestTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +173,7 @@
 			files = (
 				ECBCF2161D585E5B0020779C /* ViewController.m in Sources */,
 				ECBCF22B1D585F360020779C /* LXViewSelectorController.m in Sources */,
+				9B85FA621DB9F47E004280AD /* TestTableViewController.m in Sources */,
 				ECBCF2131D585E5B0020779C /* AppDelegate.m in Sources */,
 				ECBCF2101D585E5B0020779C /* main.m in Sources */,
 			);
@@ -314,6 +324,7 @@
 				ECBCF2241D585E5B0020779C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

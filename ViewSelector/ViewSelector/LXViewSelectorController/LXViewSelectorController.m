@@ -50,6 +50,8 @@
     for (int i=0; i<self.controllers.count; i++) {
         UIViewController *vc = self.controllers[i];
         
+        [self addChildViewController:vc];
+        
         vc.view.frame = CGRectMake(i*self.showView.bounds.size.width, 0, self.showView.bounds.size.width, self.showView.bounds.size.height);
         [self.showView addSubview:vc.view];
         

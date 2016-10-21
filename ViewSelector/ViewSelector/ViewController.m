@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LXViewSelectorController.h"
+#import "TestTableViewController.h"
 #define RandomColor [UIColor colorWithRed:(random()%255)/255.0 green:(random()%255)/255.0 blue:(random()%255)/255.0 alpha:1]
 @interface ViewController ()
 
@@ -33,12 +34,18 @@
     //准备要添加的控制器和标题数组
     NSMutableArray *vcArr = [NSMutableArray array];
     NSMutableArray *titleArr = [NSMutableArray array];
+    
+    
     for (int i =0; i<4; i++) {
         UIViewController *vc = [[UIViewController alloc] init];
         vc.view.backgroundColor = RandomColor;
         [vcArr addObject:vc];
         [titleArr addObject:[NSString stringWithFormat:@"条目%d",i+1]];
     }
+    TestTableViewController *ttvc = [[TestTableViewController alloc] init];
+    [titleArr addObject:@"表示图"];
+    [vcArr addObject:ttvc];
+    
     
     //初始化并push
     LXViewSelectorController *vc = [[LXViewSelectorController alloc] initWithControllers:vcArr titles:titleArr];
